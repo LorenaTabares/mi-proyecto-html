@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hola Mundo, Estoy aprendiendo Html, a hacer lo primordial en un sitio web">
+  <meta name="keywords" content="HTML, CSS, links, etiquetas, imagenes, tablas, listas, imagenes, video, audio">  
+  <meta name="author" content="Lore">
+  
+  <link rel="shortcut icon" href="./Imagenes/favicon-16x16.png" type="image/x-icon">
+    <title>Listas</title>
+    <style>
+        a {
+            background-color: lightgreen;
+        }
+
+        p {
+            background-color: lightgreen;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#"> Uno</a>
+    <a href="#"> Dos</a>
+
+    <p>Uno</p>
+    <p>Dos</p>
+    <!-- Listas -->
+    <ul>
+        <li>Gato 1
+            <ul>
+                <li>Arisco</li>
+                <li>Mion</li>
+
+            </ul>
+        </li>
+        <li>Gato 2</li>
+        <li>Gato 3</li>
+        <li><img src="./Imagenes/Cat.svg" alt="icon the cat"></li>
+
+    </ul>
+    <nav>
+        <ul>
+            <li><a href="#">Youtube</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Webtoon</a></li>
+        </ul>
+    </nav>
+    <!-- tablas -->
+    <table>
+        <tr>
+            <th>Macho</th>
+            <th>Hembra</th>
+        </tr>
+        <tr>
+            <td>Romeo</td>
+            <td>Julieta</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>Aplica a trabajo</h3>
+
+    <form enctype="multipart/form-data">
+        <label for="nombre"></label>
+        <input type="text" placeholder="Nombre" maxlength="10" minlength="3" id="nombre">
+        <br><br>
+        <!-- Ingresar email -->
+        <label for="correo"></label>
+        <input type="email" placeholder="Email" required id="correo">
+        <br><br>
+        <!-- Ingresar contraseña -->
+        <label for="contrasena"></label>
+        <input type="password" placeholder="Contraseña" required id="contrasena">
+        <br><br>
+        <!-- ingresar color     -->
+        <label for="color"></label>
+        <input type="color" placeholder="Color" required id="color">
+        <br><br>
+        <!-- ingresar fecha de nacimiento -->
+        <label for="fecha"></label>
+        <input type="date" placeholder="Fecha de nacimiento" required id="fecha">
+        <br><br>
+        <!-- ingresar edad -->
+        <label for="edad"></label>
+        <input type="number" placeholder="Edad" required id="edad">
+        <br><br>
+        <!-- ingresar telefono -->
+        <label for="telefono"></label>
+        <input type="tel" placeholder="Telefono" required id="telefono">
+        <br><br>
+        <!--Lista Desplegable-->
+
+        <select>
+            <option value="MX">Mexico</option>
+            <option value="ARG">Argentina</option>
+            <option value="No" selected>Otro</option>
+        </select>
+        <br><br>
+
+        <!-- Que horario quieres -->
+        <label for="horario-matutino">
+            <input type=radio name="horario" id="horario-matutino" value="matutino">Matutino
+        </label>
+        <label for="horario-nocturno">
+            <input type=radio name="horario" id="horario-nocturno" value="nocturno">Nocturno
+        </label>
+        <label for="horario-mixto">
+            <input type=radio name="horario" id="horario-mixto" value="mixto">Mixto>
+        </label>
+        <br><br>
+        <!-- Que te gusta hacer -->
+        <label>
+            <input type=checkbox name="intereses">Deporte
+        </label>
+        <label>
+            <input type=checkbox name="intereses">Musica
+        </label>
+        <br><br>
+
+        <!-- Comentarios -->
+        <textarea cols="30" rows="10"></textarea>
+        <br><br>
+
+        <!-- Subir archivo -->
+        <label for="archivo"> Sube un archivo</label>
+        <input type="file" id="archivo" name="archivo" accept=".jpg, .png, .pdf">
+        <br><br>
+        <!-- Subir video -->
+        <label for="video">Sube un video</label>
+        <input type="file" id="video" name="video" accept=".mp4, .avi, .mov">
+        <br><br>
+        <!-- Subir audio -->
+        <label for="audio"> Sube un audio</label>
+        <input type="file" id="audio" name="audio" accept=".mp3, .wav, .ogg">
+        <br><br>
+
+
+        <label for="fecha-hora">Elige una fecha y hora</label>
+        <input type="datetime-local" id="fecha-hora">
+        <br><br>
+
+        <label for="hora">Elige una hora</label>
+        <input type="time" id="hora" name="hora">
+        <br><br>
+
+        <label for="mes">Elige un mes</label>
+        <input type="month" id="mes" name="mes">
+        <br><br>
+
+        <label for="semana"> Elige una semana</label>
+        <input type="week" id="semana" name="semana">
+        <br><br>
+
+        <label for="search">Buscador</label>
+        <input type="search" id="search" name="search" placeholder="Buscar...">
+        <br><br>
+
+        <label for="range">Mide un rango</label>
+        <input type="range" id="range" name="range" min="0" max="100">
+        <br><br>
+
+        <label for="url">Ingresa Url</label>
+        <input type="url" id="url" name="url" placeholder="https://www.example.com">
+        <br><br><br>
+
+        <input type="reset" value="Restablecer">
+        <input type="submit" value="Enviar">
+        <button type="menu"> hola</button>
+       
+
+
+    </form>
+    <br><br>
+    <hr>
+    <h3>IFRAME</h3>
+    <p>Iframe es un elemento HTML que permite incrustar otro documento HTML dentro de la página actual. Se utiliza
+        comúnmente para mostrar contenido externo, como videos, mapas o documentos, sin necesidad de salir de la página
+        principal.</p>
+    <iframe src="../index.html" width="560" height="315"></iframe>
+    <br><br>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LTsR3LfhdxI?si=LMjgWHEgwaIXbCaw&amp;start=9"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br><br>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.547632304666!2d-75.56977359999999!3d6.1912308!2m
+        3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4682895d589689%3A0x4c03f171d8cdb91!2sMuseo%20El%20Castillo%2
+        C%20El%20Poblado%2C%20Medell%C3%ADn%2C%20El%20Poblado%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1747
+        256949167!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br><br>
+    
+    <hr>
+    <h3>Audios y Videos</h3>
+    <video src="./videos y audios/Video de WhatsApp 2025-05-14 a las 16.31.37_b7265a7a.mp4" width="500" controls muted loop 
+    poster="./Imagenes/2 gatitos pegandose una piña.jpeg"></video>
+    <br><br>
+    <h4>Be my lover</h4>
+    <audio src="./videos y audios/011 BE MY LOVER.MP3" controls></audio>
+    <br><br>
+    
+
+ 
+  <!-- Imagenes adaptables -->
+   <figure>
+    <img src="./Imagenes/Anne-diana.jpeg" alt="Anne y dahiana haciendo una promesa" width="300" height="200">
+    <figcaption>Anne y Dahiana</figcaption>
+   </figure>
+   
+   <picture>
+    <source srcset="./Imagenes/Anne-Gilbert.jpeg" media="(min-width:500px)">
+    <img src="./Imagenes/Familyanne.jpeg" alt="La fanila de Anne reunida leyendo un libro" width="300" height="200">
+   </picture>
+
+
+
+
+
+</body>
+
+</html>

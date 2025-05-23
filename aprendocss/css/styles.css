@@ -1,0 +1,89 @@
+/* Selectores*/
+/* Selector de tipo*/
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h2{
+    color: rgb(3, 20, 51);
+    font-style: italic;
+}
+li{
+    font-size: 20px;
+    list-style: square;
+}
+/* Selector de clase*/
+.subtitle{
+    text-align: center;
+    background-color: lightslategray;
+    color: white;
+}
+/* Selector id*/
+#title{
+    background-color: mediumorchid;
+    color: white;
+    padding: 20px 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*selectores combinadores
+combinador de decwendencia*/
+.section h2{
+    background-color: hotpink;
+}
+
+ul li{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* .abuelo .parrafo{
+    background-color: blueviolet;
+} */
+
+/*combinador de hijos directos*/
+.section > ul{    
+    background-color: lightcoral;
+    padding: 30px 46px;
+    
+}
+ul > li {
+    background-color: aquamarine;
+}
+
+/*combinador hermano adyacente*/
+.subtitulo + .parrafito{
+    color: rgb(133, 47, 118);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+/*Combinador hermano general*/
+.subtitulo ~ .parrafote{
+    color: darkslategrey;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+
+/*selector de atributo*/
+[value]{
+    background-color: lightcoral;
+    display: block;
+    width: 180px;
+    margin-top: 20px;
+}
+
+ [type="text"]{
+    color: green;
+
+ }
+ [value ~="tu"]{
+    color: darkmagenta;
+ }
+ [value ^="Pon"]{
+    background-color: lightskyblue;
+ }
+ [value$="aquí"]
+ {
+    font-size: 20px;
+ }
+ p, form{
+    padding-left: 30px;
+ }
+ 
